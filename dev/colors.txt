@@ -1,0 +1,12 @@
+black
+#28282d
+white
+#ffffff
+green
+#659ba7
+orange
+#efba48
+red
+#cc2841
+blue
+#add0d6
