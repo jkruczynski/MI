@@ -13,7 +13,8 @@
     <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
     <!-- Bootstrap core CSS -->
     <link href="./css/bootstrap.min.css" rel="stylesheet">
-    <link href="./css/jcarousel.responsive.css" rel="stylesheet">
+    <link href="./css/slick.css" rel="stylesheet"> 
+	<link href="./css/slick-theme.css" rel="stylesheet">
     <style>
         @media (min-width: 1200px) {
             .container {
@@ -29,6 +30,22 @@
             list-style-type: none;
             padding: 0;
         }
+		.image img {
+    width: 100%;
+    padding: 1px;
+}
+.slider.responsive {
+    margin: 20px auto;
+    position: relative;
+    border: 10px solid #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 2px #999;
+    -moz-box-shadow: 0 0 2px #999;
+    box-shadow: 0 0 2px #999;
+}
+
     </style>
 </head>
 
@@ -62,30 +79,16 @@
         </div>
         <br>
         <div class="row">
-            <div class="jcarousel-wrapper">
-                <div class="jcarousel">
-                    <ul>
-
-                        <li><img src="./images/IMG_8497_small_2.jpg" alt="Image"></li>
-                        <li><img src="./images/IMG_8468_small.jpg" alt="Image"></li>
-                        <li><img src="./images/IMG_8442_small.jpg" alt="Image"></li>
-                        <li><img src="./images/IMG_8585_small.jpg" alt="Image"></li>
-                        <li><img src="./images/IMG_8482_small.jpg" alt="Image"></li>
-                        <li><img src="./images/IMG_8458_small.jpg" alt="Image"></li>
-                        <li><img src="./images/IMG_8516_small2.jpg" alt="Image"></li>
-                        <li><img src="./images/IMG_8574_small.jpg" alt="Image"></li>
-                        <li><img src="./images/IMG_8584_small.jpg" alt="Image"></li>
-                        <li><img src="./images/IMG_8555_small.jpg" alt="Image"></li>
-
-                    </ul>
-                </div>
-
-                <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
-                <a href="#" class="jcarousel-control-next">&rsaquo;</a>
-
-                <p class="jcarousel-pagination"></p>
-            </div>
-
+			<div class="slider responsive">
+						<div class="image"><img src="./images/IMG_8497_small_2.jpg" alt="Image"></div>
+                        <div class="image"><img src="./images/IMG_8468_small.jpg" alt="Image"></div>
+                        <div class="image"><img src="./images/IMG_8442_small.jpg" alt="Image"></div>
+                        <div class="image"><img src="./images/IMG_8585_small.jpg" alt="Image"></div>
+                        <div class="image"><img src="./images/IMG_8482_small.jpg" alt="Image"></div>
+                        <div class="image"><img src="./images/IMG_8458_small.jpg" alt="Image"></div>
+                        <div class="image"><img src="./images/IMG_8516_small2.jpg" alt="Image"></div>
+                        <div class="image"><img src="./images/IMG_8574_small.jpg" alt="Image"></div>
+			</div>
         </div>
     </div>
     <!-- Bootstrap core JavaScript
@@ -96,8 +99,8 @@
         window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
     </script>
     <script src="./js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="./js/jquery.jcarousel.min.js"></script>
-    <script type="text/javascript" src="./js/jcarousel.responsive.js"></script>
+    <script type="text/javascript" src="./js/slick.js"></script>
+    <script type="text/javascript" src="./js/slick.responsive.js"></script>
 </body>
 
 </html>
